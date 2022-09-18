@@ -51,7 +51,8 @@ csl: china-national-standard-gb-t-7714-2015-author-date.csl
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+
 ```
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
