@@ -181,7 +181,7 @@ ft
 
 为克服内生性对实证结果的影响，本文选择沪深300指数作为研究对象，利用指数调整作为外生冲击，根据指数调整规则构造控制组和实验组，采用双重差分模型（DID）检验指数调整对定价效率的影响。
 
-```{r echo=FALSE, message=FALSE, warning=FALSE,tab.cap="回归结果"}
+```{r echo=FALSE, message=FALSE, tab.id = "mytab2", warning=FALSE,tab.cap="回归结果"}
 fname<-system.file("extdata","table.html",package = "startowd",mustWork = TRUE)
 library(flextable)
 library(stringi)
@@ -199,7 +199,7 @@ ft
 
 虽然我们已经证实了ETF通过降低交易成本、缓解卖空限制和激励分析师挖掘信息来提升成分股的定价效率，但ETF持股比例由两种因素决定，一是ETF申购赎回活动，二是ETF跟踪指数成分股调整，这两种因素改变都会导致ETF持股发生变化。因此，我们将ETF持股比例分解为申购赎回相关的ETF持股比例和指数调整相关的ETF持股比例。
 
-```{r echo=FALSE, message=FALSE, warning=FALSE,tab.cap="回归结果"}
+```{r echo=FALSE, message=FALSE, tab.id = "mytab3",warning=FALSE,tab.cap="回归结果"}
 table<-gettable("touqixjies.html")[c(2:21),]
 ft<-fmmodel(table)
 ft
@@ -212,7 +212,7 @@ knitr::include_graphics("Structure.png")
 
 <!---BLOCK_LANDSCAPE_START--->
 
-```{r echo=FALSE, message=FALSE, warning=FALSE,tab.cap="回归结果"}
+```{r echo=FALSE, message=FALSE,tab.id = "mytab4", warning=FALSE,tab.cap="回归结果"}
 table<-gettable("table3.html")[c(2:16,42:43),]
 ft<-fmmodel(table)
 ft
